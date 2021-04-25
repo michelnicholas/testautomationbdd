@@ -48,8 +48,6 @@ public class TrelloLoginSteps {
         WebElement emailField = Hooks.driver().findElement(loc_email_field);
         WebElement passwordField = Hooks.driver().findElement(loc_password_field);
         WebElement loginButton = Hooks.driver().findElement(loc_login_button);
-        emailField.sendKeys("michelnicholas1993@gmail.com");
-        passwordField.sendKeys("Imani11234"); 
         loginButton.click();
 
     }
@@ -61,9 +59,7 @@ public class TrelloLoginSteps {
         WebElement pageBanner = Hooks.driver().findElement(loc_page_banner);
         boolean isVisible = pageBanner.isDisplayed();
         Assert.assertTrue(isVisible);
-        
-        
-    }
+        }
 
 
 }
