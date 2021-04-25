@@ -28,4 +28,13 @@ Supported browser:
 
 
 ## Generating the Report 
+After the test execution, you can generate CluClumber Test Report by executing following maven command.
+
+```bash
+mvn cluecumber-report:reporting
+```
+
+Example Report:
+
+![screenshot](/images/report.png)
 
