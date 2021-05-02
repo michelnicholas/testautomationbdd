@@ -1,12 +1,12 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 1764969000,
+              "duration": 1758775900,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "User can login to Trello with valid credentials",
+        "line": 13,
+        "name": "User cannot login to Trello with invalid credentials",
         "description": "",
-        "id": "trello-login-functionality;user-can-login-to-trello-with-valid-credentials",
+        "id": "trello-login-functionality;user-cannot-login-to-trello-with-invalid-credentials",
         "after": [
           {
             "result": {
-              "duration": 634300500,
+              "duration": 627648600,
               "status": "passed"
             },
             "match": {
@@ -34,10 +34,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1487951800,
+              "duration": 1756120900,
               "status": "passed"
             },
-            "line": 4,
+            "line": 14,
             "name": "User goes to the Trello home page",
             "match": {
               "location": "TrelloLoginSteps.user_goes_to_the_Trello_home_page()"
@@ -46,10 +46,10 @@
           },
           {
             "result": {
-              "duration": 50865900,
+              "duration": 50027500,
               "status": "passed"
             },
-            "line": 5,
+            "line": 15,
             "name": "User clicks on login link",
             "match": {
               "location": "TrelloLoginSteps.user_clicks_on_login_link()"
@@ -58,10 +58,10 @@
           },
           {
             "result": {
-              "duration": 937268100,
+              "duration": 967215300,
               "status": "passed"
             },
-            "line": 6,
+            "line": 16,
             "name": "User is on Login page",
             "match": {
               "location": "TrelloLoginSteps.user_is_on_Login_page()"
@@ -70,27 +70,33 @@
           },
           {
             "result": {
-              "duration": 134862100,
+              "duration": 279918200,
               "status": "passed"
             },
-            "line": 7,
-            "name": "User logins to the trello with valid credentials",
+            "line": 17,
+            "name": "user logins with invalid credentials",
             "match": {
-              "location": "TrelloLoginSteps.user_logins_to_the_trello_with_valid_credentials()"
+              "location": "TrelloLoginSteps.user_logins_with_invalid_credentials()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3040237300,
+              "duration": 3030016400,
               "status": "passed"
             },
-            "line": 8,
-            "name": "User should be able to see Trello boards page",
+            "line": 18,
+            "name": "user should be able to see an error message",
             "match": {
-              "location": "TrelloLoginSteps.user_should_be_able_to_see_Trello_boards_page()"
+              "location": "TrelloLoginSteps.user_should_be_able_to_see_an_error_message()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@dev"
           }
         ]
       }
@@ -99,6 +105,12 @@
     "description": "",
     "id": "trello-login-functionality",
     "keyword": "Feature",
-    "uri": "trello_login.feature"
+    "uri": "trello_login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@smoke"
+      }
+    ]
   }
 ]
